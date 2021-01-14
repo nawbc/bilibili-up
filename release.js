@@ -52,7 +52,7 @@ const Platform = builder.Platform;
 				provider: 'github',
 				repo: 'bilibili-up',
 				owner: 'sewerganger',
-				releaseType: 'release',
+				releaseType: 'release'
 			},
 			asar: false,
 			artifactName: '${name}-setup-${version}.${ext}'

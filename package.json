@@ -6,13 +6,16 @@
   "main": ".webpack/main/index.js",
   "scripts": {
     "start": "electron-forge start --inspect-electron",
-    "build": "electron-forge package",
+    "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts .",
     "release": "npm run package && node ./release.js"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sewerganger/bilibili-up.git"
+  },
   "author": {
     "name": "sewerganger",
     "email": "wanghan9423@outlook.com"
@@ -25,24 +28,6 @@
         "asar": false,
         "overwrite": true
       },
-      "makers": [
-        {
-          "name": "@electron-forge/maker-wix",
-          "config": {
-            "language": 1033,
-            "manufacturer": "bilibiliup"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "name": "bilibili-up"
-          }
-        },
-        {
-          "name": "@electron-forge/maker-zip"
-        }
-      ],
       "plugins": [
         [
           "@electron-forge/plugin-webpack",
@@ -76,6 +61,7 @@
     "@typescript-eslint/eslint-plugin": "^4.0.1",
     "@typescript-eslint/parser": "^4.0.1",
     "copy-webpack-plugin": "^6.2.1",
+    "cross-env": "^7.0.3",
     "css-loader": "^4.2.1",
     "electron": "11.1.1",
     "electron-builder": "^22.9.1",

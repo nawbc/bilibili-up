@@ -27,6 +27,7 @@ if (require('electron-squirrel-startup')) { // eslint-disable-line global-requir
 //   mainWindow.setPosition(width - 310, height - 610, true);
 // };
 
+
 const createWindow = (): void => {
 
   const { width, height } = screen.getPrimaryDisplay().workAreaSize;
