@@ -3,8 +3,8 @@ import './preset.css';
 import got from 'got';
 import { remote } from 'electron';
 import tinycolor from 'tinycolor2';
-import { VideoProp } from './interface';
 import cookie from 'cookie';
+import { VideoProp } from './interface';
 
 declare const SETTING_WINDOW_WEBPACK_ENTRY: any;
 

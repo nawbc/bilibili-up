@@ -10,7 +10,7 @@ const Platform = builder.Platform;
 	
 	await builder.build({
 		targets: Platform.WINDOWS.createTarget(['nsis']),
-		publish: "never",
+		// publish: "never",
 		config: {
 			productName: 'bilibili-up',
 			appId: 'com.sewerganger.bilibiliup',
@@ -48,6 +48,12 @@ const Platform = builder.Platform;
 				uninstallerIcon: path.resolve(__dirname, './src/main/icons/win/icon.ico'),
 				deleteAppDataOnUninstall: true
 			},
+			publish: {
+				provider: 'github',
+				repo: 'bilibili-up',
+				owner: 'sewerganger',
+				releaseType: 'release',
+			},
 			asar: false,
 			artifactName: '${name}-setup-${version}.${ext}'
 		}
@@ -58,5 +64,6 @@ const Platform = builder.Platform;
 		.catch((err) => {
 			console.log(err);
 		});
+		// 397b778fe3bed8596a54b816854ba868a24579dd
 
 })();
