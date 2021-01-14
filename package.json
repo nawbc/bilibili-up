@@ -10,7 +10,7 @@
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "lint": "eslint --ext .ts .",
-    "release": "npm run package && node ./release.js"
+    "release": "npm run package &&cross-env GH_TOKEN=f3a3df87a83a00091df2599cb4a469893fd44aca node ./release.js"
   },
   "repository": {
     "type": "git",
