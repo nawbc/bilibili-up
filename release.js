@@ -10,7 +10,7 @@ const Platform = builder.Platform;
 	
 	await builder.build({
 		targets: Platform.WINDOWS.createTarget(['nsis']),
-		// publish: "never",
+		publish: "always",
 		config: {
 			productName: 'bilibili-up',
 			appId: 'com.sewerganger.bilibiliup',
