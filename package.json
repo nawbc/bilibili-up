@@ -1,7 +1,7 @@
 {
   "name": "bilibili-up",
   "productName": "bilibili-up",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "My Electron application description",
   "main": ".webpack/main/index.js",
   "scripts": {
