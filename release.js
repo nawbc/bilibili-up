@@ -51,7 +51,8 @@ const Platform = builder.Platform;
 			publish: {
 				provider: 'github',
 				repo: 'bilibili-up',
-				owner: 'sewerganger'
+				owner: 'sewerganger',
+				releaseType: 'onTag'
 			},
 			asar: false,
 			artifactName: '${name}-setup-${version}.${ext}'
